@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-Ride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img
+                    src="https://st3.depositphotos.com/8543466/35322/i/450/depositphotos_353227774-stock-photo-electric-vehicle-charging-station-sign.jpg"
+                    alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+        
+    </nav>
+
+
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <div class="location">
+                  <button class="btn-light" onclick="getlocation()">Your current location</button> 
+
+
+                    <script src="D:\node02.js"></script>
+             </div>
+                
+            <div class="Destination">
+                    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js">
+                    </script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+
+                    <form method="post">
+                        <select class="city_list" name="city">
+                            <option value="">Enter Destination</option>
+                            <option value="Andheri">Andheri</option>
+                            <option value="D.N.Nagar">D.N.Nagar</option>
+                            <option value="Cooper Hospital">Cooper Hospital</option>
+                            <option value="Mithibai College">Mithibai College</option>
+                            <option value="Azad Nagar">Azad Nagar</option>
+                            <option value="Vile Parle">Vile Parle</option>
+                            <option value="Santacruz">Santacruz</option>
+                            <option value="Powai">Powai</option>
+                            <option value="Mahim">Mahim</option>
+                            <option value="Versova">Versova</option>
+                            <option value="Goregoan">Goregoan</option>
+                            <option value="Jogeshwari">Jogeshwari</option>
+                            <option value="Gundavli">Gundavli</option>
+                            <option value="Seepz">Seepz</option>
+                            <option value="Bandra">Bandra</option>
+                            <option value="Worli">Worli</option>
+                            <option value="Mahim">Mahim</option>
+                            <option value="Airport Road">Airport Road</option>
+                            <option value="Marol Naka">Marol Naka</option>
+                            <option value="Dadar">Dadar</option>
+                            <option value="Ghatkopar">Ghatkopar</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Borivali">Borivali</option>
+                            <option value="Malad">Malad</option>
+                            <option value="Kandivali">Kandivali</option>
+                            <option value="Churchgate">Churchgate</option>
+                            <option value="Colaba">Colaba</option>
+                            <option value="Mulund">Mulund</option>
+                            <option value="Juhu">Juhu</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="JB Nagar">JB Nagar</option>
+                        </select>
+                        <!-- <input type="submit" name="submit"/> -->
+                    </form>
+
+                    <script>
+                        jQuery('.city_list').ch;
+                    </script>
+
+                </div>
+                <div class="datetime">
+
+                    <input class="date" type="date">
+                    <input class="time" type="time">
+
+                </div>
+                <div class="buttons">
+
+                    
+
+                    <button class="btn">Search Availability</button>
+
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <p class="text-big">Moving People and the World</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+        <div class="paras">
+       <p class="sectiontag text1-big">What Makes us Better than Others?</p> 
+       <p class="sectionSubtag text1-small">Our service to provide E-vehicles on rental basis and to show the availability of convenient public transport is not only cost effective, but also has the ability to drastically reduce pollution when capitalised by commuters.
+        We ensure people travel in an eco-friendly way without compromising with their comfort, budget and time. The running cost of an electric vehicle is much lower than an equivalent petrol or diesel vehicle and it is a great way to 
+        save our environment.Thus it works both ways 'by the people' and 'for the people'. Join us in this Electric Vehicle
+        revolution and save your environment, country and Money! </p> 
+        </div>
+        <div class="thumbnail">
+        <img src="https://d943jm6rlnzra.cloudfront.net/wp-content/uploads/2017/12/12061447/mobility-future-cities-electric-car-charging.png" width="400px" alt="Image" class="imgFluid">
+       </div>
+    </section>
+    
+    <section class="section section-left">
+        <div class="paras">
+       <p class="sectiontag text1-big">We are not an Option, We are a CHOICE</p> 
+       <p class="sectionSubtag text1-small">We provide passengers with the avaibility of public transport at the required time, as Public transport is 
+        better anytime.As the City is running out of space for private vehicles, we try our best to convince people that greater adoption of public transport would help to reduce air pollution and free up space in the urban areas, making city 
+        traffic significantly more pleasant for cyclists and pedestrians, in addition to making cityscapes across the world more beautiful and peaceful
+        Due to vehicle congestion many cities have dedicated bus lanes, so using public transport within the city can be not only cheaper, but also faster.
+        Especially when you don’t need worry about finding a parking space, or how much will it cost, when traveling on public transport.
+       </p> 
+        </div>
+        <div class="thumbnail">
+        <img src="https://www.traffictechnologytoday.com/wp-content/uploads/2020/09/PublicTransportation-1.jpg" width="500px" alt="Image" class="imgFluid">
+       </div>
+    </section>
+    
+    <section class="section">
+        <div class="paras">
+       <p class="sectiontag text1-big">Let Us help you find your Way :)</p> 
+       <p class="sectionSubtag text1-small">Today’s communities face an unprecedented set of challenges. And while technology by itself isn't the only solution, when it's done right it has the potential to contribute to a better world for all.
+        Contribute in saving the your own city and Experience the smarter way to pay.</p> 
+        </div>
+        <div class="thumbnail">
+        <img src="https://media.istockphoto.com/id/1124615451/vector/group-of-people-with-an-electric-car.jpg?s=612x612&w=0&k=20&c=JrYbCWIjtnsDVlYWTm9umM1MUah99IIIE9wtZjCOgPM=" width="500px" alt="Image" class="imgFluid">
+       </div>
+    </section>
+
+
+    <style>
+
+
+        body
+        {background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Tulips.jpg);
+        
+       background-size:cover;background-position:center;color:#fff !important;} 
+       
+       .services {margin:90px auto;text-align:center;}
+       
+       
+       h3 a{color:white}
+       
+       
+       h1{font-family:sans-serif;letter-spacing:1px;}
+       
+       h1:after {content:'';background:white;display:block;width:150px;
+       height:3px;margin:10px auto;}
+       
+       
+       .icon{font-size:40px;margin:20px auto;padding:20px;height:80px;width:80px;
+       border: 1px solid white;border-radius:50%}
+       
+       .col-md-3:hover {box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+       cursor:pointer}
+       
+       
+       
+       </style>
+       <title>Services/Green-Ride</title>
+       <link rel="stylesheet" href="">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+       
+       <script src="https://kit.fontawesome.com/a93cb6a170.js" crossorigin="anonymous"></script>
+       </head>
+       
+       <body>
+       
+       <div class="container">
+       <div class="services">
+       
+       <h1>Our Services</a></h1>
+       
+       </div>
+       <div class="row">
+          <div class="col-md-3 text-center">
+            <div class="icon">
+               <i class="fa-solid fa-car"></i>
+       </div>
+       <h3>E-Vehicles for Rent</a></h3>
+       <p>We provide the best cozy and comfortable E-vehicles to costumers on rental basis to 
+           travel from one part of the city to another. 
+        </p>
+       </div>
+       
+        <div class="col-md-3 text-center">
+            <div class="icon">
+               <i class="fa-solid fa-magnifying-glass"></i>
+       
+       </div>
+       <h3>Finds You Your Way</a></h3>
+       <p>We help the costumers to find the most convenient way using either public transports 
+           or E-vehicles to reach upto their Destination.
+        </p>
+       </div>
+       
+        <div class="col-md-3 text-center">
+            <div class="icon">
+               <i class="fa-solid fa-van-shuttle"></i>
+       
+       </div>
+       <h3>Public Transport Availability</a></h3>
+       <p> We provide the details about the availability of public transport at the required date and time.
+        </p>
+       </div>
+       
+       <div class="col-md-3 text-center">
+            <div class="icon">
+           <i class="fa-solid fa-face-smile"></i>
+       
+       </div>
+       <h3>Growing Together</a></h3>
+       <p>We make sure that people travel in an eco-friendly way without compromising with their comfort,budget or time.
+        </p>
+       </div>
+       
+       
+       
+       
+       </div>
+       
+       
+       </div>
+
+       <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email-id">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your Query"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+
+
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 2027 Green-ride.com- All rights reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>
