@@ -27,13 +27,62 @@
         <div class="box-main">
             <div class="firsthalf">
                 <div class="location">
-                   <button onclick="getlocation()" style="height: 34px;
+                  <button onclick="getlocation()" style="height: 34px;
                      width: 232.4px;
                      border: white;
                      border-radius: 10px;">Give your current location</button>
-                    <script src="D:\scrip2.js"></script>
-                    <script src="D:\script1.js"></script>
-                    <input type="text" name="search" placeholder="Enter Destination" id="search">
+                    <!-- <script src="D:\node.js"></script> -->
+                    <script src="D:\node02.js"></script>
+
+
+                    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js">
+                    </script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+
+                    <form method="post">
+                        <select class="city_list" name="city">
+                            <option value="">Enter Destination</option>
+                            <option value="Andheri">Andheri</option>
+                            <option value="D.N.Nagar">D.N.Nagar</option>
+                            <option value="Cooper Hospital">Cooper Hospital</option>
+                            <option value="Mithibai College">Mithibai College</option>
+                            <option value="Azad Nagar">Azad Nagar</option>
+                            <option value="Vile Parle">Vile Parle</option>
+                            <option value="Santacruz">Santacruz</option>
+                            <option value="Powai">Powai</option>
+                            <option value="Mahim">Mahim</option>
+                            <option value="Versova">Versova</option>
+                            <option value="Goregoan">Goregoan</option>
+                            <option value="Jogeshwari">Jogeshwari</option>
+                            <option value="Gundavli">Gundavli</option>
+                            <option value="Seepz">Seepz</option>
+                            <option value="Bandra">Bandra</option>
+                            <option value="Worli">Worli</option>
+                            <option value="Mahim">Mahim</option>
+                            <option value="Airport Road">Airport Road</option>
+                            <option value="Marol Naka">Marol Naka</option>
+                            <option value="Dadar">Dadar</option>
+                            <option value="Ghatkopar">Ghatkopar</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Borivali">Borivali</option>
+                            <option value="Malad">Malad</option>
+                            <option value="Kandivali">Kandivali</option>
+                            <option value="Churchgate">Churchgate</option>
+                            <option value="Colaba">Colaba</option>
+                            <option value="Mulund">Mulund</option>
+                            <option value="Juhu">Juhu</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="JB Nagar">JB Nagar</option>
+                        </select>
+                        <!-- <input type="submit" name="submit"/> -->
+                    </form>
+
+                    <script>
+                        jQuery('.city_list').ch;
+                    </script>
 
                 </div>
                 <div class="datetime">
@@ -43,6 +92,8 @@
 
                 </div>
                 <div class="buttons">
+
+                    
 
                     <button class="btn">Search Availability</button>
 
