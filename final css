@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+.logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 46%;
+    border: 3px solid white;
+    border-radius: 70px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    /* cursor: pointer; */
+}
+
+.nav-list {
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 43px 97px;
+    list-style: none;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:'Ubuntu',sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: rgb(139, 119, 119);
+}
+
+
+
+#search {
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 9px;
+    text-align: center;
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url('https://www.hdfcergo.com/images/default-source/two-wheeler-insurance-page-images/electric-vehicle-rules.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.firstsection {
+    height: 86vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    margin: auto;
+    height: 56%;
+}
+
+.firsthalf {
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.secondhalf {
+    width: 58%;
+    height: 57%;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+.text-big {
+    font-size: 39px;
+}
+
+a:hover{
+    background-color: grey;
+}
+.btn-light{
+background-color: white;
+font-weight: bold;
+margin: 15px 3px;
+padding: 15x 9px;
+border-radius: 7px;
+cursor: pointer;
+font-size: 25px;
+width: 600px;
+}
+
+.btn {
+    font-size: 21px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 11px 1px;
+    padding: 3px 6px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.city_list{
+    background-color: white;
+    font-weight:bold;
+    margin: 15px 3px;
+    padding: 20x 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 28px;
+    width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.datetime{
+    
+}
+
+.datetime input{
+    border: 2px solid white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 12px 6px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.date{
+    padding-bottom: 10px;
+}
+
+.time{
+    padding-bottom: 1px;
+}
+
+.contact{
+background-color: rgb(228 227 182);
+height: 100vh;
+}
+
+.text-center {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.form{
+    max-width: 1200px;
+    margin: 42px auto;
+}
+
+.form-input{
+    margin: 15px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 18.5px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); */
+
+.paras{
+    padding-left: 5%;
+}
+
+
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+
+.imgFluid{
+    border: 2px solid black;
+    border-radius: 300px;
+}
+
+.text1-big{
+font-size: 40px;
+}
+
+.text1-small{
+font-size: 20px;
+}
+
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
