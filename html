@@ -1,30 +1,66 @@
-</nav>
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="background firstsection">
-    <div class="box-main">
-        <div class="firsthalf">
-            <p class="text-big">The Future of Vehicles is Here</p>
-            <div class="buttons">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicles-The Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-                <input type="text" name="search" placeholder="Current Location" id="search">
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img
+                    src="https://st3.depositphotos.com/8543466/35322/i/450/depositphotos_353227774-stock-photo-electric-vehicle-charging-station-sign.jpg"
+                    alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
 
-                <input type="text" name="search" placeholder="Enter Destination" id="search"><br>
+    </nav>
 
-                <label for="mode">Choose your Mode of Transport:</label>
-                <select name="Mode Of Transport" id="mode" required>
-                    <option value="Car">Car</option>
-                    <option value="Bus">Bus</option>
-                    <option value="Bike">Bike</option>
-                </select>
-                <button class="btn">Search</button>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <div class="location">
+                   <input type="button" style="height: 34px;
+                     width: 232.4px;
+                     border: white;
+                     border-radius: 10px;">
+                    <input type="text" name="search" placeholder="Enter Destination" id="search">
+
+                </div>
+                <div class="datetime">
+
+                    <input class="date" type="date">
+                    <input class="time" type="time">
+
+                </div>
+                <div class="buttons">
+
+                    <button class="btn">Search Availability</button>
+
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <p class="text-big">Moving People and the World</p>
 
             </div>
         </div>
 
-        <div class="secondhalf">
-            <img src="new logo.jpg" alt="Laptop Image">
+    </section>
 
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input type="text" name="name" id="name">
         </div>
-    </div>
+    </section>
+</body>
 
-</section>
+</html>
