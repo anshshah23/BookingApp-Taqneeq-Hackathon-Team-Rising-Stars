@@ -160,3 +160,42 @@ height: 86vh;
     border: 2px solid gray;
     border-radius: 6px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.paras{
+    padding-left: 5%;
+}
+
+
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+
+.imgFluid{
+    border: 2px solid black;
+    border-radius: 300px;
+}
+
+.text1-big{
+font-size: 40px;
+}
+
+.text1-small{
+font-size: 20px;
+}
+
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
