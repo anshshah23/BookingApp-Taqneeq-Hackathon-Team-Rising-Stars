@@ -1,3 +1,4 @@
+//without the permission of the user using ip adress
 const getlocation = () => {
 fetch("https://ipapi.co/json/")
     .then((response) => response.json())
@@ -21,7 +22,7 @@ const getlocation = () => {
 
 
 
-
+//with the permission of the user
 const showPosition = (position) =>
 {
     let lat= position.coords.latitude;
@@ -62,3 +63,4 @@ const showError = (error) =>
 };
 
 
+//dropdown menu
