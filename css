@@ -56,18 +56,19 @@
     font-size: 18px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 9px;
+    text-align: center;
 }
 
 
 .background {
-    background: rgba(0, 0, 0, 0.7)url('new background.jpg');
+    background: rgba(0, 0, 0, 0.7)url('https://www.hdfcergo.com/images/default-source/two-wheeler-insurance-page-images/electric-vehicle-rules.jpg');
     background-size: cover;
     background-blend-mode: darken;
 
 }
 
 .firstsection {
-    height: 100vh;
+    height: 86vh;
 }
 
 .box-main {
@@ -76,41 +77,35 @@
     align-items: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
-    height: 36%;
+    height: 56%;
 }
 
 .firsthalf {
-    width: 80%;
+    width: 120%;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
 }
 
+
 .secondhalf {
-    width: 30%;
+    width: 58%;
     height: 57%;
+    text-align: center;
+    font-family: cursive;
 }
 
-.secondhalf img {
-    width: 81%;
-    border: 3px solid;
-    display: block;
-    border-radius: 30px;
-    margin: auto;
-}
 
 .text-big {
     font-size: 39px;
 }
 
-.text-small {
-    font-size: 17px;
-}
 
 .btn {
-    font-size: 17px;
+    font-size: 21px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 7px;
     margin: 11px 1px;
@@ -120,45 +115,48 @@
     cursor: pointer;
 }
 
-.btn-sm {
-    padding: 5px 9px;
+.location{
+margin: 1px;
+text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-
-.paras{
-    padding-left: 5%;
+.datetime{
+    margin: 1px;
+    padding: 10px;
+    padding-top: 19px;
 }
 
-
-
-.section{
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+.datetime input{
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.section-left{
-    flex-direction: row-reverse;
+.date{
+    padding-bottom: 2px;
 }
 
-
-.imgFluid{
-    border: 2px solid black;
-    border-radius: 300px;
+.time{
+    padding-bottom: 1px;
 }
 
-.text1-big{
-font-size: 40px;
+.contact{
+background-color: rgb(228 227 182);
+height: 86vh;
 }
 
-.text1-small{
-font-size: 20px;
+.text-center {
+    text-align: center;
 }
 
-.sectionsubtag{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+
+.form input{
+    width: 100%;
+    font-size: 18.5px;
+    border: 2px solid gray;
+    border-radius: 6px;
 }
