@@ -96,7 +96,7 @@
 
                     
 
-                    <button class="btn">Search Availability</button>
+                    <button class="btn-avail">Search Availability</button>
 
                 </div>
             </div>
