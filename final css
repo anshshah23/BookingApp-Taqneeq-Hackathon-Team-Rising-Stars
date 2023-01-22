@@ -116,22 +116,37 @@ a:hover{
 background-color: white;
 font-weight: bold;
 margin: 15px 3px;
-padding: 15x 9px;
+padding: 15px 9px;
 border-radius: 7px;
 cursor: pointer;
 font-size: 25px;
 width: 600px;
 }
 
-.btn {
-    font-size: 21px;
-    border: 2px solid rgb(255, 255, 255);
+.btn-avail{
+background-color:black;
+color: white;
+width: 600px;
+margin: 20px 6px;
+font-weight: bold;
+padding: 15px 9px;
+border-radius: 7px;
+cursor: pointer;
+font-size: 25px;
+
+
+}
+
+.btn{
+    background-color: white;
+    font-weight: bold;
+    margin: 15px 3px;
+    padding: 15x 9px;
     border-radius: 7px;
-    margin: 11px 1px;
-    padding: 3px 6px;
-    background: none;
-    color: white;
     cursor: pointer;
+    font-size: 25px;
+    width: 200px;   
+       
 }
 
 .city_list{
@@ -148,7 +163,7 @@ width: 600px;
 }
 
 .datetime{
-    
+    padding-top: 15px;
 }
 
 .datetime input{
