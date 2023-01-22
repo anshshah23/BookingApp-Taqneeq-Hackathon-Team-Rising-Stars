@@ -32,7 +32,15 @@
                     <button class="btn-light" onclick="getlocation()">Your current location</button>
 
 
-                    <script src="D:\node02.js"></script>
+                    <script>const getlocation = () => {
+                        fetch("https://ipapi.co/json/")
+                            .then((response) => response.json())
+                            .then((data) => {
+                                const des = document.querySelector("p");
+                        
+                                des.innerHTML = `Latitude: ${data.latitude} Longitude: ${data.longitude}`;
+                        });
+                        };</script>
                 </div>
 
                 <div class="Destination">
