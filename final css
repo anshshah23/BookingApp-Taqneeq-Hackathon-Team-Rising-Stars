@@ -3,18 +3,22 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 
 .logo {
-    width: 15%;
+    width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo img {
-    width: 46%;
+    width: 50%;
     border: 3px solid white;
     border-radius: 70px;
 }
@@ -38,6 +42,7 @@
 .nav-list li {
     padding: 43px 97px;
     list-style: none;
+    width: 20%;
     text-align: center;
     font-size: larger;
 }
@@ -47,7 +52,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    font-family:'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-list li a:hover {
@@ -109,35 +114,36 @@
     font-size: 39px;
 }
 
-a:hover{
-    background-color: grey;
-}
-.btn-light{
-background-color: white;
-font-weight: bold;
-margin: 15px 3px;
-padding: 15px 9px;
-border-radius: 7px;
-cursor: pointer;
-font-size: 25px;
-width: 600px;
+a:hover {
+    color: green;
 }
 
-.btn-avail{
-background-color:black;
-color: white;
-width: 600px;
-margin: 20px 6px;
-font-weight: bold;
-padding: 15px 9px;
-border-radius: 7px;
-cursor: pointer;
-font-size: 25px;
+.btn-light {
+    background-color: white;
+    font-weight: bold;
+    margin: 15px 3px;
+    padding: 15px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 600px;
+}
+
+.btn-avail {
+    background-color: black;
+    color: white;
+    width: 600px;
+    margin: 20px 6px;
+    font-weight: bold;
+    padding: 15px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px;
 
 
 }
 
-.btn{
+.btn {
     background-color: white;
     font-weight: bold;
     margin: 15px 3px;
@@ -145,13 +151,13 @@ font-size: 25px;
     border-radius: 7px;
     cursor: pointer;
     font-size: 25px;
-    width: 200px;   
-       
+    width: 200px;
+
 }
 
-.city_list{
+.city_list {
     background-color: white;
-    font-weight:bold;
+    font-weight: bold;
     margin: 15px 3px;
     padding: 20x 12px;
     border-radius: 7px;
@@ -162,11 +168,11 @@ font-size: 25px;
 
 }
 
-.datetime{
+.datetime {
     padding-top: 15px;
 }
 
-.datetime input{
+.datetime input {
     border: 2px solid white;
     border-radius: 7px;
     text-align: center;
@@ -176,31 +182,37 @@ font-size: 25px;
     width: 300px;
 }
 
-.date{
+.date {
     padding-bottom: 10px;
 }
 
-.time{
+.time {
     padding-bottom: 1px;
 }
 
-.contact{
-background-color: rgb(228 227 182);
-height: 100vh;
+.services {
+    padding-top: 100px;
+    color: black;
+}
+
+.contact {
+    background-color: rgb(228 227 182);
+    height: 100vh;
+    color: black;
 }
 
 .text-center {
     padding: 30px;
     text-align: center;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.form{
+.form {
     max-width: 1200px;
     margin: 42px auto;
 }
 
-.form-input{
+.form-input {
     margin: 15px 0;
     padding: 5px 3px;
     width: 100%;
@@ -211,13 +223,13 @@ height: 100vh;
 
 /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); */
 
-.paras{
+.paras {
     padding-left: 5%;
 }
 
 
 
-.section{
+.section {
     height: 500px;
     display: flex;
     align-items: center;
@@ -226,32 +238,32 @@ height: 100vh;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.section-left{
+.section-left {
     flex-direction: row-reverse;
 }
 
 
-.imgFluid{
+.imgFluid {
     border: 2px solid black;
     border-radius: 300px;
 }
 
-.text1-big{
-font-size: 40px;
+.text1-big {
+    font-size: 40px;
 }
 
-.text1-small{
-font-size: 20px;
+.text1-small {
+    font-size: 20px;
 }
 
-.sectionsubtag{
+.sectionsubtag {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.text-footer{
+.text-footer {
     text-align: center;
     padding: 30px 0px;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;
     color: white;
