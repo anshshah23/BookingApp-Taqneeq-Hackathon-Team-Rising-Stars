@@ -1,17 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
 .logo {
-    width: 15%;
+    width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo img {
-    width: 46%;
+    width: 50%;
     border: 3px solid white;
     border-radius: 70px;
 }
@@ -35,18 +46,22 @@
 .nav-list li {
     padding: 43px 97px;
     list-style: none;
+    width: 20%;
     text-align: center;
     font-size: larger;
 }
 
+
 .nav-list li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-list li a:hover {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: rgb(139, 119, 119);
 }
 
 
@@ -103,73 +118,122 @@
     font-size: 39px;
 }
 
+a:hover {
+    color: green;
+}
+
+.btn-light {
+    background-color: white;
+    font-weight: bold;
+    margin: 15px 3px;
+    padding: 15px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 600px;
+}
+
+.btn-avail {
+    background-color: black;
+    color: white;
+    width: 600px;
+    margin: 20px 6px;
+    font-weight: bold;
+    padding: 15px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px;
+
+
+}
 
 .btn {
-    font-size: 21px;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    font-weight: bold;
+    margin: 15px 3px;
+    padding: 15x 9px;
     border-radius: 7px;
-    margin: 11px 1px;
-    padding: 3px 6px;
-    background: none;
-    color: white;
     cursor: pointer;
+    font-size: 25px;
+    width: 200px;
+
 }
 
-.location{
-margin: 1px;
-text-align: center;
+.city_list {
+    background-color: white;
+    font-weight: bold;
+    margin: 15px 3px;
+    padding: 20x 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 28px;
+    width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-.datetime{
-    margin: 1px;
-    padding: 10px;
-    padding-top: 19px;
+.datetime {
+    padding-top: 15px;
 }
 
-.datetime input{
+.datetime input {
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 7px;
     text-align: center;
+    padding: 12px 6px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
 }
 
-.date{
-    padding-bottom: 2px;
+.date {
+    padding-bottom: 10px;
 }
 
-.time{
+.time {
     padding-bottom: 1px;
 }
 
-.contact{
-background-color: rgb(228 227 182);
-height: 86vh;
+.services {
+    padding-top: 100px;
+    color: black;
+}
+
+.contact {
+    background-color: rgb(228 227 182);
+    height: 100vh;
+    color: black;
 }
 
 .text-center {
+    padding: 30px;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.form{
-    max-width: 344px;
-    margin: auto;
+.form {
+    max-width: 1200px;
+    margin: 42px auto;
 }
 
-.form input{
+.form-input {
+    margin: 15px 0;
+    padding: 5px 3px;
     width: 100%;
     font-size: 18.5px;
     border: 2px solid gray;
     border-radius: 6px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); */
 
-.paras{
+.paras {
     padding-left: 5%;
 }
 
 
 
-.section{
+.section {
     height: 500px;
     display: flex;
     align-items: center;
@@ -178,24 +242,33 @@ height: 86vh;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.section-left{
+.section-left {
     flex-direction: row-reverse;
 }
 
 
-.imgFluid{
+.imgFluid {
     border: 2px solid black;
     border-radius: 300px;
 }
 
-.text1-big{
-font-size: 40px;
+.text1-big {
+    font-size: 40px;
 }
 
-.text1-small{
-font-size: 20px;
+.text1-small {
+    font-size: 20px;
 }
 
-.sectionsubtag{
+.sectionsubtag {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
 }

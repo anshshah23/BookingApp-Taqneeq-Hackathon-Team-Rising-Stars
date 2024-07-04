@@ -6,53 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green-Ride</title>
-    <link rel="stylesheet" href="https://drive.google.com/file/d/1LNtkTy1q4LDi5RlTwERFGk7sMXD6WoXp/view?usp=sharing">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+    <script src="https://kit.fontawesome.com/a93cb6a170.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Tulips.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff !important;
+        }
+
+        .services {
+            margin: 90px auto;
+            text-align: center;
+        }
+
+        h3 a {
+            color: white;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+
+        h1:after {
+            content: '';
+            background: black;
+            display: block;
+            width: 150px;
+            height: 3px;
+            margin: 10px auto;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin: 20px auto;
+            padding: 20px;
+            height: 80px;
+            width: 80px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        .col-md-3:hover {
+            box-shadow: 5px 7px 9px -3px rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+        .contact h2:after {
+            content: '';
+            background: black;
+            display: block;
+            width: 150px;
+            height: 3px;
+            margin: 10px auto;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar background">
+    <nav class="navbar">
         <ul class="nav-list">
-            <div class="logo"><img
-                    src="https://st3.depositphotos.com/8543466/35322/i/450/depositphotos_353227774-stock-photo-electric-vehicle-charging-station-sign.jpg"
-                    alt="logo"></div>
+            <div class="logo">
+                <img src="https://st3.depositphotos.com/8543466/35322/i/450/depositphotos_353227774-stock-photo-electric-vehicle-charging-station-sign.jpg" alt="logo">
+            </div>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact us</a></li>
-          
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
-
-
-    <section class="background firstsection">
-        <div class="box-main" id="home">
+    <section class="background firstsection" id="home">
+        <div class="box-main">
             <div class="firsthalf">
                 <div class="location">
                     <button class="btn-light" onclick="getlocation()">Your current location</button>
-
-
-                    <script>const getlocation = () => {
-                        fetch("https://ipapi.co/json/")
-                            .then((response) => response.json())
-                            .then((data) => {
-                                const des = document.querySelector("p");
-                        
-                                des.innerHTML = `Latitude: ${data.latitude} Longitude: ${data.longitude}`;
-                        });
-                        };</script>
+                    <script>
+                        const getlocation = () => {
+                            fetch("https://ipapi.co/json/")
+                                .then((response) => response.json())
+                                .then((data) => {
+                                    const des = document.querySelector("p");
+                                    des.innerHTML = `Latitude: ${data.latitude} Longitude: ${data.longitude}`;
+                                });
+                        };
+                    </script>
                 </div>
 
                 <div class="Destination">
-                    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-                        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js">
-                    </script>
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
-
                     <form method="post">
-                        <select class="city_list" name="city">
+                        <select id="city_list" class="city_list chosen-select" name="city" title="Select City">
                             <option value="">Enter Destination</option>
                             <option value="Andheri">Andheri</option>
                             <option value="D.N.Nagar">D.N.Nagar</option>
@@ -70,7 +119,6 @@
                             <option value="Seepz">Seepz</option>
                             <option value="Bandra">Bandra</option>
                             <option value="Worli">Worli</option>
-                            <option value="Mahim">Mahim</option>
                             <option value="Airport Road">Airport Road</option>
                             <option value="Marol Naka">Marol Naka</option>
                             <option value="Dadar">Dadar</option>
@@ -86,101 +134,73 @@
                             <option value="Navi Mumbai">Navi Mumbai</option>
                             <option value="JB Nagar">JB Nagar</option>
                         </select>
-
                     </form>
-
                     <script>
-                        jQuery('.city_list').ch;
+                        $(document).ready(function () {
+                            $(".chosen-select").chosen();
+                        });
                     </script>
-
                 </div>
+
                 <div class="datetime">
-
-                    <input class="date" type="date">
-                    <input class="time" type="time">
-
+                    <label for="date">Date:</label>
+                    <input id="date" class="date" type="date">
+                    <label for="time">Time:</label>
+                    <input id="time" class="time" type="time">
                 </div>
-                <div class="buttons">
-                    <link rel="availability" href="D:\availability.js">
-                    <div>
-                        <script>
-                    const searchAvailability = () => {
-                const response = confirm("Check the Availability!!");
 
-                if (response) {
-                    alert("The ride is available in your selected region");
-                } else {
-                    alert("Oops! sorry we arent able to find a ride in your area");
-                }
-            };
-                    </script>
-                    
-                   
+                <div class="buttons">
                     <button class="btn-avail" onclick="searchAvailability()">Search Availability</button>
-                </div> 
-                </div>
-                <div class="buttons">
-                    <link rel="booking" href="D:\confirmationbox.js">
-                    <div>
-                        <script>
-                        const confirmation = () => {
-                    const response = confirm("Are you sure you want to Book the ride?");
-                    
-                    console.log(response);
-                    if (response) {
-                    alert("The ride is booked,and arriving at your current location in a few minutes.");
-                } else {
-                    alert("The booking was canceled");
-                }
-                    }
-                    if (response) {
-                    alert("The ride is booked,and arriving at your current location in a few minutes.");
-                } else {
-                    alert("The booking was canceled");
-                }
-                    
-                    
+                    <script>
+                        const searchAvailability = () => {
+                            const response = confirm("Check the Availability!!");
+                            if (response) {
+                                alert("The ride is available in your selected region");
+                            } else {
+                                alert("Oops! sorry we aren't able to find a ride in your area");
+                            }
+                        };
                     </script>
-                    
-                    
-                    <button class="btn-avail" onclick="confirmation()">Book the ride</button>
-                    </div> 
                 </div>
-                
-                <div class="secondhalf">
-                <p class="text-big">Moving People and the World</p>
 
+                <div class="buttons">
+                    <button class="btn-avail" onclick="confirmation()">Book the ride</button>
+                    <script>
+                        const confirmation = () => {
+                            const response = confirm("Are you sure you want to Book the ride?");
+                            if (response) {
+                                alert("The ride is booked, and arriving at your current location in a few minutes.");
+                            } else {
+                                alert("The booking was canceled");
+                            }
+                        };
+                    </script>
+                </div>
+            </div>
+
+            <div class="secondhalf">
+                <p class="text-big">Moving People and the World</p>
             </div>
         </div>
-
     </section>
-
 
     <section class="section" id="about">
         <div class="paras">
             <p class="sectiontag text1-big">What Makes us Better than Others?</p>
-            <p class="sectionSubtag text1-small">Our service to provide E-vehicles on rental basis and to show the
-                availability of convenient public transport is not only cost effective, but also has the ability to
-                drastically reduce pollution when capitalised by commuters.
-                We ensure people travel in an eco-friendly way without compromising with their comfort, budget and time.
-                The running cost of an electric vehicle is much lower than an equivalent petrol or diesel vehicle and it
-                is a great way to
-                save our environment.Thus it works both ways 'by the people' and 'for the people'. Join us in this
-                Electric Vehicle
-                revolution and save your environment, country and Money! </p>
+            <p class="sectionSubtag text1-small">
+                Our service to provide E-vehicles on rental basis and to show the availability of convenient public transport is not only cost-effective, but also has the ability to drastically reduce pollution when capitalized by commuters. We ensure people travel in an eco-friendly way without compromising their comfort, budget, and time. The running cost of an electric vehicle is much lower than an equivalent petrol or diesel vehicle, and it is a great way to save our environment. Thus it works both ways 'by the people' and 'for the people'. Join us in this Electric Vehicle revolution and save your environment, country, and money!
+            </p>
         </div>
         <div class="thumbnail">
-            <img src="https://d943jm6rlnzra.cloudfront.net/wp-content/uploads/2017/12/12061447/mobility-future-cities-electric-car-charging.png"
-                width="400px" alt="Image" class="imgFluid">
+            <img src="https://d943jm6rlnzra.cloudfront.net/wp-content/uploads/2017/12/12061447/mobility-future-cities-electric-car-charging.png" width="400px" alt="Image" class="imgFluid">
         </div>
     </section>
 
     <section class="section section-left">
         <div class="paras">
             <p class="sectiontag text1-big">We are not an Option, We are a CHOICE</p>
-            <p class="sectionSubtag text1-small">We provide passengers with the avaibility of public transport at the
-                required time, as Public transport is
-                better anytime.As the City is running out of space for private vehicles, we try our best to convince
+            <p class="sectionSubtag text1-small">
+                We provide passengers with the availability of public transport at the required time, as public transport is better anytime. As the city is running out of space for private vehicles, we try our best to convince
                 people that greater adoption of public transport would help to reduce air pollution and free up space in
                 the urban areas, making city
                 traffic significantly more pleasant for cyclists and pedestrians, in addition to making cityscapes
@@ -319,16 +339,11 @@
                         comfort,budget or time.
                     </p>
                 </div>
-
-
-
-
+                <br><br>
             </div>
-
-            <br><br><br><br><br><br><br><br><br><br><br>
         </div>
 
-        <section class="contact" id="contact">
+        <section class="contact h-screen flex flex-col justify-center items-center" id="contact">
             <h2 class="text-center">Contact Us</h2>
             <style>
                 h2:after {
@@ -337,7 +352,6 @@
                     display: block;
                     width: 150px;
                     height: 3px;
-                    margin: 10px auto;
                 }
             </style>
 
